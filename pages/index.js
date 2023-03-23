@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
-import NewsComponent from './components/NewsComponent'
-import SideBar from './components/SideBar'
-import TrendingNews from './components/TrendingNews'
-import NavBar from './components/NavBar'
+import NewsComponent from '../components/NewsComponent'
+import SideBar from '../components/SideBar'
+import TrendingNews from '../components/TrendingNews'
+import NavBar from '../components/NavBar'
 import Router from 'next/router';
 import { useEffect, useState } from 'react'
 
@@ -82,8 +82,8 @@ export const getServerSideProps = async (context) => {
   if(query.q) q=query.q;
 
   const url = `https://newsapi.org/v2/top-headlines?q=${q}&category=${category}&language=en&pageSize=100`;
-  let data = {"articles":[]};
-  data = await fetch(url,
+  // let data = {"articles":[]};
+  const data = await fetch(url,
     {
       headers: {
           Authorization: `Bearer ${process.env.NEWS_API_KEY}`,
