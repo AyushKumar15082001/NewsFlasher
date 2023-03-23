@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+    background: #49acff1c;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.scroll{
+  overflow-y: auto;
+  height: 80vh;
+}
+.scroll::-webkit-scrollbar {
+  width: 0.3em;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  outline: none;
+}
+.scroll::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+  background-color: white;
+}

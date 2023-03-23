@@ -1,0 +1,31 @@
+.container{
+    width: 25vw;
+}
+.container h2{
+    text-align: center;
+    color: #04445F;
+    font-size: 30px;
+    padding: 10px;
+}
+.container .card{
+    margin: 30px 20px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 9px 8px 8px 1px #0000008a;
+}
+.card a{
+    display: flex;
+}
+.card h4{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.card img{
+    border-radius: 10px;
+}
+@media screen  and (max-width: 768px){
+    .container{
+        display: none;
+    }
+}
