@@ -36,7 +36,6 @@ const NavBar = (props) => {
             setTimeOut(null);
         }
         setTimeOut(setTimeout(() => {
-            console.log('debounced');
             search(input);
         }, wait))
     }
@@ -50,7 +49,6 @@ const NavBar = (props) => {
         setInput(item);
         setShow(false);
         props.setQuery(item);
-        console.log('serch handler');
     }
 
     return (

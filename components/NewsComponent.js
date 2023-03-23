@@ -6,18 +6,14 @@ import moment from 'moment';
 const NewsComponent = (props) => {
     //pagination 
     const [currentPage, setCurrentPage] = useState(1);
-    const [paginatedNews, setPaginatedNews] = useState([]);
     const pageSize = 6;
 
     const onPageChange = (page) => {
       setCurrentPage(page);
     };
-    useEffect(() => {
-        const startIndex = (currentPage - 1) * pageSize;
-        const endIndex = startIndex + pageSize;
-        setPaginatedNews(props.news.slice(startIndex, endIndex));
-    },[currentPage])
-
+    const startIndex = (currentPage - 1) * pageSize;
+    const endIndex = startIndex + pageSize;
+    const paginatedNews =  props.news.slice(startIndex, endIndex);
     return (
         <div>
             <h2 className={styles.contTitle}>Featured News</h2>

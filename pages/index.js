@@ -11,7 +11,6 @@ export default function Home(props) {
   const [categories, setCategories] = useState('');
   const [query, setQuery] = useState('');
   const [showHam, setShowHam] = useState(true);
-
   const changeHam = () => {
     setShowHam(!showHam);
   }
