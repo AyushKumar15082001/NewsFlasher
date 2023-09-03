@@ -20,7 +20,7 @@ const SideBar = (props) => {
           transform: translateX(0px);
         }
       `}</style>
-        <Link href="/"><h1>My News App</h1></Link>
+        <Link href="/"><h1>NewsFlasher</h1></Link>
         <h2>Categories</h2>
         <ul>
             <li onClick={setActive} id = 'general' className={activeClass === 'general'?'active':''}><span className="material-symbols-outlined">newspaper</span>&nbsp; General</li>
